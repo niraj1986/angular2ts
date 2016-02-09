@@ -1,0 +1,6 @@
+{
+"directory": "bower_components",
+"proxy":"http://bgh39679:Antartica12@165.225.104.34:80/",
+"https-proxy":"http://bgh39679:Antartica12@165.225.104.34:80/",
+"strict-ssl": false
+}

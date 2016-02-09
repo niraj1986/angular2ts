@@ -1,0 +1,19 @@
+<div class="panel panel-primary">
+    <div class="panel-heading ">
+        Assets ({{assetServiceLength}})<a class="pull-right"><span class="glyphicon glyphicon-cog"></span> </a>
+    </div>
+    <div class="panel-body">
+        <table class="table table-condensed table-striped table-bordered table-hover">
+            <tr>
+                <th>Status</th>
+                <th># of assets</th>
+                <th>% of assets</th>
+            </tr>
+            <tr *ngFor="#wf of assetServices">
+                <td> {{wf.status}}</td>
+                <td> {{wf.assetnumber}}</td>
+                <td> {{wf.assetpercentage}}</td>
+            </tr>
+        </table>
+    </div>
+</div>

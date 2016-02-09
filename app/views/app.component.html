@@ -17,7 +17,7 @@
                 <ul class="nav navbar-nav">
                     <li><a><span class="glyphicon glyphicon-search"></span></a></li>
                     <li><a [routerLink]="['Dashboard']">Overview</a></li>
-                    <li><a>Assets</a></li>
+                    <li><a [routerLink]="['Asset']">Assets</a></li>
                     <li><a [routerLink]="['Workflow']">Workflow</a></li>
                     <li><a >Configuration</a></li>
                 </ul>
@@ -27,7 +27,7 @@
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Arjun | Help <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">Action</a></li>
+                            <li><a [routerLink]="['Distribution']">Distribution</a></li>
                             <li><a href="#">Another action</a></li>
                             <li><a href="#">Something else here</a></li>
                             <li role="separator" class="divider"></li>
