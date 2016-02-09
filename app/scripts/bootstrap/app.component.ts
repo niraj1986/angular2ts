@@ -3,6 +3,8 @@ import {Location, ROUTER_DIRECTIVES, RouteConfig} from 'angular2/router';
 import {HTTP_PROVIDERS} from 'angular2/http';
 import {DashboardComponent} from './../dashboard/dashboard.component';
 import {WorkflowComponent} from './../workflow/workflow.component';
+import {AssetComponent} from './../asset/asset.component';
+import {DistributionComponent} from './../distribution/distribution.component';
 
 @Component({
   selector: 'app',
@@ -15,7 +17,9 @@ import {WorkflowComponent} from './../workflow/workflow.component';
 
 @RouteConfig([
   {path: '/dashboard', name: 'Dashboard', component: DashboardComponent, useAsDefault: true}, 
-  {path: '/workflow', name: 'Workflow', component: WorkflowComponent}
+  {path: '/workflow', name: 'Workflow', component: WorkflowComponent}, 
+  {path: '/asset', name: 'Asset', component: AssetComponent},
+  {path: '/distribution', name: 'Distribution', component: DistributionComponent}
 ])
 
 export class AppComponent {

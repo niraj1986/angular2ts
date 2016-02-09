@@ -1,4 +1,4 @@
-System.register(['angular2/core', './../workflow/workflow.component'], function(exports_1) {
+System.register(['angular2/core', './../workflow/workflow.component', './../distribution/distribution.component', './../asset/asset.component'], function(exports_1) {
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
         var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
         if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -8,7 +8,7 @@ System.register(['angular2/core', './../workflow/workflow.component'], function(
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, workflow_component_1;
+    var core_1, workflow_component_1, distribution_component_1, asset_component_1;
     var DashboardComponent;
     return {
         setters:[
@@ -17,6 +17,12 @@ System.register(['angular2/core', './../workflow/workflow.component'], function(
             },
             function (workflow_component_1_1) {
                 workflow_component_1 = workflow_component_1_1;
+            },
+            function (distribution_component_1_1) {
+                distribution_component_1 = distribution_component_1_1;
+            },
+            function (asset_component_1_1) {
+                asset_component_1 = asset_component_1_1;
             }],
         execute: function() {
             DashboardComponent = (function () {
@@ -27,7 +33,7 @@ System.register(['angular2/core', './../workflow/workflow.component'], function(
                     core_1.Component({
                         selector: 'dashboard',
                         templateUrl: 'app/views/dashboard.component.html',
-                        directives: [workflow_component_1.WorkflowComponent]
+                        directives: [workflow_component_1.WorkflowComponent, distribution_component_1.DistributionComponent, asset_component_1.AssetComponent]
                     }), 
                     __metadata('design:paramtypes', [])
                 ], DashboardComponent);

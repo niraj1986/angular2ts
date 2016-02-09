@@ -1,4 +1,4 @@
-System.register(['angular2/core', 'angular2/router', 'angular2/http', './../dashboard/dashboard.component', './../workflow/workflow.component'], function(exports_1) {
+System.register(['angular2/core', 'angular2/router', 'angular2/http', './../dashboard/dashboard.component', './../workflow/workflow.component', './../asset/asset.component', './../distribution/distribution.component'], function(exports_1) {
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
         var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
         if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -8,7 +8,7 @@ System.register(['angular2/core', 'angular2/router', 'angular2/http', './../dash
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, router_1, http_1, dashboard_component_1, workflow_component_1;
+    var core_1, router_1, http_1, dashboard_component_1, workflow_component_1, asset_component_1, distribution_component_1;
     var AppComponent;
     return {
         setters:[
@@ -26,6 +26,12 @@ System.register(['angular2/core', 'angular2/router', 'angular2/http', './../dash
             },
             function (workflow_component_1_1) {
                 workflow_component_1 = workflow_component_1_1;
+            },
+            function (asset_component_1_1) {
+                asset_component_1 = asset_component_1_1;
+            },
+            function (distribution_component_1_1) {
+                distribution_component_1 = distribution_component_1_1;
             }],
         execute: function() {
             AppComponent = (function () {
@@ -43,12 +49,13 @@ System.register(['angular2/core', 'angular2/router', 'angular2/http', './../dash
                     }),
                     router_1.RouteConfig([
                         { path: '/dashboard', name: 'Dashboard', component: dashboard_component_1.DashboardComponent, useAsDefault: true },
-                        { path: '/workflow', name: 'Workflow', component: workflow_component_1.WorkflowComponent }
+                        { path: '/workflow', name: 'Workflow', component: workflow_component_1.WorkflowComponent },
+                        { path: '/asset', name: 'Asset', component: asset_component_1.AssetComponent },
+                        { path: '/distribution', name: 'Distribution', component: distribution_component_1.DistributionComponent }
                     ]), 
-                    __metadata('design:paramtypes', [(typeof (_a = typeof router_1.Location !== 'undefined' && router_1.Location) === 'function' && _a) || Object])
+                    __metadata('design:paramtypes', [router_1.Location])
                 ], AppComponent);
                 return AppComponent;
-                var _a;
             })();
             exports_1("AppComponent", AppComponent);
         }
