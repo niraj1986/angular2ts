@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <meta author="Arjun">
+  <title>Angular 2 Demo</title>
+
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" type="text/css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <script>
+    document.write('<base href="' + document.location + '" />');
+  </script>
+</head>
+
+<body>
+  <!-- This is where the application resides/ injected-->
+  <app></app>
+  <!-- Load the scripts which are pretty much required in the below order -->
+  
+  <script src="node_modules/es6-shim/es6-shim.min.js"></script>
+  <script src="node_modules/systemjs/dist/system-polyfills.js"></script>
+  <script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
+  <script src="node_modules/systemjs/dist/system.src.js"></script>
+  <script src="node_modules/rxjs/bundles/Rx.js"></script>
+  <script src="node_modules/angular2/bundles/angular2.dev.js"></script>
+  <script src="https://code.angularjs.org/2.0.0-beta.3/router.dev.js"></script>
+  <script type="text/javascript" src="https://code.angularjs.org/2.0.0-beta.3/http.dev.js"></script>
+  <!-- 3. Configure SystemJS -->
+  <script>
+    System.config({
+      packages: {
+        app: {
+          format: 'register',
+          defaultExtension: 'js'
+        }
+      }
+    });
+    System.import('app/scripts/bootstrap/main')
+      .then(null, console.error.bind(console));
+  </script>
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
